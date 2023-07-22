@@ -1,0 +1,4 @@
+export const COLORS = {
+  BLACK: ["#11181C", "#11181C", "#11181C", "#11181C", "#11181C", "#11181C", "#11181C", "#11181C", "#11181C", "#11181C",],
+  WHITE: ["#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE", "#EFEEEE",],
+}

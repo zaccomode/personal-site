@@ -1,35 +1,85 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import plusJakartaSansRegular from "./assets/fonts/PlusJakartaSans-Regular.ttf";
+import plusJakartaSansRegularItalic from "./assets/fonts/PlusJakartaSans-Italic.ttf";
+import ibmPlexMonoLight from "./assets/fonts/IBMPlexMono-Light.ttf";
+import ibmPlexMonoLightItalic from "./assets/fonts/IBMPlexMono-LightItalic.ttf";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { MantineProvider, Global } from "@mantine/core";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/Home";
+import { COLORS } from "./components/_colors";
+import { useColorScheme } from "@mantine/hooks";
+
+export default function App() {
+
+  const colorScheme = useColorScheme();
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {/* Font imports */}
+      <Global
+        styles={[
+          {
+            "@font-face": {
+              fontFamily: "Plus Jakarta Sans",
+              src: `url("${plusJakartaSansRegular}") format("woff2")}`,
+              fontWeight: 400,
+              fontStyle: "normal",
+            },
+          },
+          {
+            "@font-face": {
+              fontFamily: "Plus Jakarta Sans",
+              src: `url("${plusJakartaSansRegularItalic}") format("woff2")}`,
+              fontWeight: 400,
+              fontStyle: "italic",
+            },
+          },
+          {
+            "@font-face": {
+              fontFamily: "IBM Plex Mono",
+              src: `url("${ibmPlexMonoLight}") format("woff2")}`,
+              fontWeight: 300,
+              fontStyle: "normal",
+            },
+          },
+          {
+            "@font-face": {
+              fontFamily: "IBM Plex Mono",
+              src: `url("${ibmPlexMonoLightItalic}") format("woff2")}`,
+              fontWeight: 300,
+              fontStyle: "italic",
+            },
+          },
+        ]}
+      />
+
+      <BrowserRouter>
+        <MantineProvider
+          withGlobalStyles
+          withNormalizeCSS
+          theme={{
+            fontFamily: "Plus Jakarta Sans, sans-serif",
+            headings: { fontFamily: "IBM Plex Mono, sans-serif", fontWeight: 200 },
+            defaultRadius: "md",
+            colors: { 
+              //@ts-ignore
+              black: colorScheme === "light" ? COLORS.BLACK : COLORS.WHITE,
+              //@ts-ignore
+              white: colorScheme === "light" ? COLORS.WHITE : COLORS.BLACK,
+              //@ts-ignore
+              permaBlack: COLORS.BLACK,
+              //@ts-ignore
+              permaWhite: COLORS.WHITE,
+            },
+            black: colorScheme === "light" ? COLORS.BLACK[0] : COLORS.WHITE[0],
+            white: colorScheme === "light" ? COLORS.WHITE[0] : COLORS.BLACK[0],
+          }}
+        >
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </MantineProvider>
+      </BrowserRouter>
     </>
   )
 }
-
-export default App
