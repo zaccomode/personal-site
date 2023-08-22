@@ -9,8 +9,9 @@ import { Column, SectionPage } from "phosphorus-web";
 import { ButtonIcon, ComponentSize, FlexAlign, FlexDirection, FlexJustify, Text } from "phosphorus-core";
 import { Title } from "../components/text/Title";
 import { Group, Image } from "@mantine/core";
-import { IconBrandInstagram, IconBrandGithub, IconMail } from "@tabler/icons-react";
+import { IconBrandInstagram, IconBrandGithub, IconMail, IconBrandThreads } from "@tabler/icons-react";
 import { ButtonCard } from "../components/buttons/ButtonCard";
+import Footer from "../components/layout/Footer";
 
 export default function HomePage() {
 
@@ -19,10 +20,9 @@ export default function HomePage() {
 
   return (
     <>
-      <Navbar />
+      <Navbar page="home" />
 
       <SectionPage
-        height="100%"
         style={{ justifyContent: "center", minHeight: "100vh" }}
       >
         <Column.Container
@@ -43,6 +43,14 @@ export default function HomePage() {
             {/* Socials buttons */}
             <Group>
               <ButtonIcon
+                color="yellow"
+                radius={ComponentSize.MD}
+                component="a"
+                href="mailto:isaac_shea@icloud.com"
+              >
+                <IconMail />
+              </ButtonIcon>
+              <ButtonIcon
                 color="black"
                 radius={ComponentSize.MD}
                 component="a"
@@ -62,9 +70,9 @@ export default function HomePage() {
                 color="black"
                 radius={ComponentSize.MD}
                 component="a"
-                href="mailto:isaac_shea@icloud.com"
+                href="https://www.threads.net/@zaccomode"
               >
-                <IconMail />
+                <IconBrandThreads />
               </ButtonIcon>
             </Group>
           </Column>
@@ -102,6 +110,8 @@ export default function HomePage() {
           />
         </Group>
       </SectionPage>
+
+      <Footer />
     </>
   )
 }

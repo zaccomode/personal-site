@@ -8,6 +8,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
 import { COLORS } from "./components/_colors";
 import { useColorScheme } from "@mantine/hooks";
+import StudiesPage from "./pages/Studies";
+import PortfolioPage from "./pages/Portfolio";
 
 export default function App() {
 
@@ -73,10 +75,13 @@ export default function App() {
             },
             black: colorScheme === "light" ? COLORS.BLACK[0] : COLORS.WHITE[0],
             white: colorScheme === "light" ? COLORS.WHITE[0] : COLORS.BLACK[0],
+            primaryColor: "black"
           }}
         >
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/studies" element={<StudiesPage />} />
           </Routes>
         </MantineProvider>
       </BrowserRouter>
