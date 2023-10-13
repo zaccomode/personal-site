@@ -40,7 +40,7 @@ export default function App() {
             "@font-face": {
               fontFamily: "IBM Plex Mono",
               src: `url("${ibmPlexMonoLight}") format("woff2")}`,
-              fontWeight: 300,
+              fontWeight: 200,
               fontStyle: "normal",
             },
           },
@@ -48,7 +48,7 @@ export default function App() {
             "@font-face": {
               fontFamily: "IBM Plex Mono",
               src: `url("${ibmPlexMonoLightItalic}") format("woff2")}`,
-              fontWeight: 300,
+              fontWeight: 200,
               fontStyle: "italic",
             },
           },
