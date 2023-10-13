@@ -1,9 +1,9 @@
-import plusJakartaSansRegular from "./assets/fonts/PlusJakartaSans-Regular.ttf";
-import plusJakartaSansRegularItalic from "./assets/fonts/PlusJakartaSans-Italic.ttf";
-import ibmPlexMonoLight from "./assets/fonts/IBMPlexMono-Light.ttf";
-import ibmPlexMonoLightItalic from "./assets/fonts/IBMPlexMono-LightItalic.ttf";
+// import plusJakartaSansRegular from "./assets/fonts/PlusJakartaSans-Regular.ttf";
+// import plusJakartaSansRegularItalic from "./assets/fonts/PlusJakartaSans-Italic.ttf";
+// import ibmPlexMonoLight from "./assets/fonts/IBMPlexMono-Light.ttf";
+// import ibmPlexMonoLightItalic from "./assets/fonts/IBMPlexMono-LightItalic.ttf";
 
-import { MantineProvider, Global } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/Home";
 import { COLORS } from "./components/_colors";
@@ -18,7 +18,7 @@ export default function App() {
   return (
     <>
       {/* Font imports */}
-      <Global
+      {/* <Global
         styles={[
           {
             "@font-face": {
@@ -53,7 +53,7 @@ export default function App() {
             },
           },
         ]}
-      />
+      /> */}
 
       <BrowserRouter>
         <MantineProvider
