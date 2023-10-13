@@ -1,3 +1,4 @@
+import { useMantineTheme } from "@mantine/core";
 import { Text, TextProps } from "phosphorus-core";
 
 export type TitleProps = TextProps & {
@@ -27,14 +28,14 @@ const ATTR = [
 ];
 
 export function Title(props: TitleProps) {
-
+  const theme = useMantineTheme();
   const order = (props.order || 1) - 1;
 
   return (
     <Text
       {...props}
       weight={props.weight || 200}
-      family={props.family || "IBM Plex Mono"}
+      family={props.family || theme.headings.fontFamily}
       size={props.size || ATTR[order].fontSize}
     >
       {props.children}
