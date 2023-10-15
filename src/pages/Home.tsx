@@ -2,6 +2,8 @@ import portrait from "../assets/images/portrait.png";
 import filedrop from "../assets/images/filedrop.png";
 import realmix from "../assets/images/realmix.png";
 import realmixBg from "../assets/images/realmix-bg.png";
+import valence from "../assets/images/valence.png";
+import valenceBg from "../assets/images/valence-bg.png";
 
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/layout/Navbar";
@@ -92,6 +94,14 @@ export default function HomePage() {
 
         {/* Project buttons */}
         <Group>
+          <ButtonCard
+            image={valence}
+            alt={t("hero.images.valence")}
+            background={valenceBg}
+
+            component="a"
+            href="https://github.com/valence-dev/valence-ui"
+          />
           <ButtonCard
             image={realmix}
             alt={t("hero.images.realmix")}
