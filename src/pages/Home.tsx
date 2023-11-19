@@ -4,6 +4,8 @@ import realmix from "../assets/images/realmix.png";
 import realmixBg from "../assets/images/realmix-bg.png";
 import valence from "../assets/images/valence.png";
 import valenceBg from "../assets/images/valence-bg.png";
+import threaditor from "../assets/images/threaditor.png";
+import threaditorBg from "../assets/images/threaditor-bg.png";
 
 import { useTranslation } from "react-i18next";
 import Navbar from "../components/layout/Navbar";
@@ -43,15 +45,16 @@ export default function HomePage() {
             </Text>
 
             {/* Socials buttons */}
-            <Group>
+            <Group spacing={5}>
               <ButtonIcon
-                color="yellow"
+                color="black"
                 radius={ComponentSize.MD}
                 component="a"
-                href="mailto:isaac_shea@icloud.com"
+                href="https://www.threads.net/@zaccomode"
               >
-                <IconMail />
+                <IconBrandThreads />
               </ButtonIcon>
+
               <ButtonIcon
                 color="black"
                 radius={ComponentSize.MD}
@@ -72,12 +75,13 @@ export default function HomePage() {
                 color="black"
                 radius={ComponentSize.MD}
                 component="a"
-                href="https://www.threads.net/@zaccomode"
+                href="mailto:isaac_shea@icloud.com"
               >
-                <IconBrandThreads />
+                <IconMail />
               </ButtonIcon>
             </Group>
           </Column>
+
           <Column
             width={{ default: "30%", mobile: "100%" }}
             align={{ default: FlexAlign.Center }}
@@ -94,6 +98,14 @@ export default function HomePage() {
 
         {/* Project buttons */}
         <Group>
+          <ButtonCard
+            image={threaditor}
+            alt={t("hero.images.threaditor")}
+            background={threaditorBg}
+
+            component="a"
+            href="https://threaditor.net/"
+          />
           <ButtonCard
             image={valence}
             alt={t("hero.images.valence")}

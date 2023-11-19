@@ -6,12 +6,13 @@ import { ButtonIcon, ComponentSize, FlexDirection, Text } from "phosphorus-core"
 import { IconBrandInstagram, IconMail } from "@tabler/icons-react";
 import { Group } from "@mantine/core";
 import PortfolioCard from "../components/cards/portfolioCard";
-
-import filedropImage from "../assets/images/portfolio/filedrop.png";
-import realmixImage from "../assets/images/portfolio/realmix.png";
-import mmbImage from "../assets/images/portfolio/mmb.png";
-import rtftImage from "../assets/images/portfolio/rtft.png";
 import Footer from "../components/layout/Footer";
+
+import threaditorImage from "../assets/images/portfolio/threaditor.png";
+import realmixImage from "../assets/images/portfolio/realmix.png";
+import filedropImage from "../assets/images/portfolio/filedrop.png";
+import rtftImage from "../assets/images/portfolio/rtft.png";
+import mmbImage from "../assets/images/portfolio/mmb.png";
 
 export default function PortfolioPage() {
 
@@ -42,7 +43,7 @@ export default function PortfolioPage() {
             {/* Socials buttons */}
             <Group>
               <ButtonIcon
-                color="yellow"
+                color="black"
                 radius={ComponentSize.MD}
                 component="a"
                 href="mailto:isaac_shea@icloud.com"
@@ -71,6 +72,14 @@ export default function PortfolioPage() {
           direction={{ default: FlexDirection.Row, mobile: FlexDirection.Column }}
           style={{ flexFlow: "wrap", justifyContent: "flex-start" }}
         >
+          <PortfolioCard
+            title={t("cards.threaditor.title")}
+            text={t("cards.threaditor.text")}
+            url="https://threaditor.net"
+
+            imageSrc={threaditorImage}
+            imageAlt={t("cards.threaditor.alt")}
+          />
           <PortfolioCard
             title={t("cards.realmix.title")}
             text={t("cards.realmix.text")}

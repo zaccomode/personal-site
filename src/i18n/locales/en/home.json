@@ -4,6 +4,7 @@
     "text": "I'm a computer science and interaction design student at QUT, based in Brisbane, Australia. I specialise at the intersection between technical complexity and user experience, and love creating powerful, user-first applications. <br> I'm also a freelance web developer and graphic designer with more than five years experience. If you're interested in working with me on a project, consider contacting me!",
     "images": { 
       "portrait": "An image of Isaac leaning forward in front of a white background.",
+      "threaditor": "Threaditor by Isaa Shea - a post editor for Threads by Instagram.",
       "valence": "Valence by Isaac Shea - An opinionated React component library.",
       "realmix": "Realmix by Isaac Shea - Shape the sound of your parties by building collaborative playlists in real-time.",
       "filedrop": "Filedrop by Isaac Shea - Quickly transfer files between any device."

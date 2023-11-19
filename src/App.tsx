@@ -36,22 +36,6 @@ export default function App() {
               fontStyle: "italic",
             },
           },
-          {
-            "@font-face": {
-              fontFamily: "IBM Plex Mono",
-              src: `url("${ibmPlexMonoLight}") format("woff2")}`,
-              fontWeight: 200,
-              fontStyle: "normal",
-            },
-          },
-          {
-            "@font-face": {
-              fontFamily: "IBM Plex Mono",
-              src: `url("${ibmPlexMonoLightItalic}") format("woff2")}`,
-              fontWeight: 300,
-              fontStyle: "italic",
-            },
-          },
         ]}
       />
 
@@ -61,7 +45,7 @@ export default function App() {
           withNormalizeCSS
           theme={{
             fontFamily: "Plus Jakarta Sans, sans-serif",
-            headings: { fontFamily: "IBM Plex Mono, sans-serif", fontWeight: 200 },
+            headings: { fontFamily: "Plus Jakarta Sans, sans-serif", fontWeight: 800 },
             defaultRadius: "md",
             colors: { 
               //@ts-ignore
