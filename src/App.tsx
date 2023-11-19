@@ -1,7 +1,5 @@
 import plusJakartaSansRegular from "./assets/fonts/PlusJakartaSans-Regular.ttf";
 import plusJakartaSansRegularItalic from "./assets/fonts/PlusJakartaSans-Italic.ttf";
-import ibmPlexMonoLight from "./assets/fonts/IBMPlexMono-Light.ttf";
-import ibmPlexMonoLightItalic from "./assets/fonts/IBMPlexMono-LightItalic.ttf";
 
 import { MantineProvider, Global } from "@mantine/core";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
