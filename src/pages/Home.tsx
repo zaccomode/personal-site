@@ -120,7 +120,7 @@ export default function HomePage() {
             background={realmixBg}
 
             component="a"
-            href="https://realmix.app/"
+            href="https://realmix.isaacshea.com/"
           />
           <ButtonCard
             image={filedrop}

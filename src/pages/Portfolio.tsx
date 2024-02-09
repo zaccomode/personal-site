@@ -3,7 +3,7 @@ import Navbar from "../components/layout/Navbar";
 import { Column, SectionPage } from "phosphorus-web";
 import { Title } from "../components/text/Title";
 import { ButtonIcon, ComponentSize, FlexDirection, Text } from "phosphorus-core";
-import { IconBrandInstagram, IconMail } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandInstagram, IconBrandThreads, IconMail } from "@tabler/icons-react";
 import { Group } from "@mantine/core";
 import PortfolioCard from "../components/cards/portfolioCard";
 import Footer from "../components/layout/Footer";
@@ -41,15 +41,16 @@ export default function PortfolioPage() {
             </Text>
 
             {/* Socials buttons */}
-            <Group>
+            <Group spacing={5}>
               <ButtonIcon
                 color="black"
                 radius={ComponentSize.MD}
                 component="a"
-                href="mailto:isaac_shea@icloud.com"
+                href="https://www.threads.net/@zaccomode"
               >
-                <IconMail />
+                <IconBrandThreads />
               </ButtonIcon>
+
               <ButtonIcon
                 color="black"
                 radius={ComponentSize.MD}
@@ -57,6 +58,22 @@ export default function PortfolioPage() {
                 href="https://www.instagram.com/zaccomode/"
               >
                 <IconBrandInstagram />
+              </ButtonIcon>
+              <ButtonIcon
+                color="black"
+                radius={ComponentSize.MD}
+                component="a"
+                href="https://github.com/zaccomode"
+              >
+                <IconBrandGithub />
+              </ButtonIcon>
+              <ButtonIcon
+                color="black"
+                radius={ComponentSize.MD}
+                component="a"
+                href="mailto:isaac_shea@icloud.com"
+              >
+                <IconMail />
               </ButtonIcon>
             </Group>
           </Column>
@@ -83,7 +100,7 @@ export default function PortfolioPage() {
           <PortfolioCard
             title={t("cards.realmix.title")}
             text={t("cards.realmix.text")}
-            url="https://realmix.app"
+            url="https://realmix.isaacshea.com"
 
             imageSrc={realmixImage}
             imageAlt={t("cards.realmix.alt")}
