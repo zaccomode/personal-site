@@ -12,7 +12,7 @@ import Navbar from "../components/layout/Navbar";
 import { Column, SectionPage } from "phosphorus-web";
 import { ButtonIcon, ComponentSize, FlexAlign, FlexDirection, FlexJustify, Text } from "phosphorus-core";
 import { Title } from "../components/text/Title";
-import { Group, Image } from "@mantine/core";
+import { Group, Image, Space } from "@mantine/core";
 import { IconBrandInstagram, IconBrandGithub, IconMail, IconBrandThreads } from "@tabler/icons-react";
 import { ButtonCard } from "../components/buttons/ButtonCard";
 import Footer from "../components/layout/Footer";
@@ -25,6 +25,8 @@ export default function HomePage() {
   return (
     <>
       <Navbar page="home" />
+
+      <Space h={40} />
 
       <SectionPage
         style={{ justifyContent: "center", minHeight: "100vh" }}
