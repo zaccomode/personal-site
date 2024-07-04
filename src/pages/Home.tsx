@@ -41,7 +41,10 @@ export default function HomePage() {
               {t("hero.title")}
             </Title>
             <Text>
-              {t("hero.text")}
+              {t("hero.text.1")}
+            </Text>
+            <Text>
+              {t("hero.text.2")}
             </Text>
 
             {/* Socials buttons */}
@@ -112,7 +115,7 @@ export default function HomePage() {
             background={valenceBg}
 
             component="a"
-            href="https://github.com/valence-dev/valence-ui"
+            href="https://valence.isaacshea.com/"
           />
           <ButtonCard
             image={realmix}

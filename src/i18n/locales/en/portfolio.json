@@ -1,12 +1,12 @@
 {
   "hero": { 
     "title": "Portfolio",
-    "text": "This is a collection of my best work, ranging from web design and app development to graphic and brand design. For a more regularly-updated portfolio (especially for design work), I would recommend checking out my Instagram profile."
+    "text": "This is a collection of my best work, ranging from web design and app development to graphic and brand design. I am most regularly active on Threads, where I share what I work on (mostly Threaditor)."
   },
   "cards": { 
     "threaditor" : { 
       "title": "Threaditor",
-      "text": "Draft, organise and beautify your posts with powerful formatting and automation tools.",
+      "text": "An app that gives you the tools to craft impactful posts for popular microblogging apps.",
       "alt": "A promotional image containing the Threaditor logo and Threaditor on a phone and laptop"
     },
     "realmix": {
