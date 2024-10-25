@@ -116,7 +116,6 @@ export default function PortfolioPage() {
           <PortfolioCard
             title={t("cards.rtft.title")}
             text={t("cards.rtft.text")}
-            url="https://rtftcleaning.com/"
 
             imageSrc={rtftImage}
             imageAlt={t("cards.rtft.alt")}
@@ -124,7 +123,6 @@ export default function PortfolioPage() {
           <PortfolioCard
             title={t("cards.mmb.title")}
             text={t("cards.mmb.text")}
-            url="https://mmbookkeeping.com.au/"
 
             imageSrc={mmbImage}
             imageAlt={t("cards.mmb.alt")}

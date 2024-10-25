@@ -33,14 +33,14 @@ export default function Navbar(props: Props) {
         >
           {t("nav.buttons.home")}
         </Button>,
-        <Button
-          variant={props.page === "portfolio" ? ButtonVariant.Light : null}
-          radius={ComponentSize.MD}
-          component={Link}
-          to="/portfolio"
-        >
-          {t("nav.buttons.portfolio")}
-        </Button>,
+        // <Button
+        //   variant={props.page === "portfolio" ? ButtonVariant.Light : null}
+        //   radius={ComponentSize.MD}
+        //   component={Link}
+        //   to="/portfolio"
+        // >
+        //   {t("nav.buttons.portfolio")}
+        // </Button>,
         // <Button
         //   variant={props.page === "studies" ? ButtonVariant.Light : null}
         //   radius={ComponentSize.MD}

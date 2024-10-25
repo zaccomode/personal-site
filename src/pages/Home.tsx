@@ -13,7 +13,7 @@ import { Column, SectionPage } from "phosphorus-web";
 import { ButtonIcon, ComponentSize, FlexAlign, FlexDirection, FlexJustify, Text } from "phosphorus-core";
 import { Title } from "../components/text/Title";
 import { Group, Image, Space } from "@mantine/core";
-import { IconBrandInstagram, IconBrandGithub, IconMail, IconBrandThreads } from "@tabler/icons-react";
+import { IconBrandInstagram, IconBrandGithub, IconMail, IconBrandThreads, IconBrandBluesky } from "@tabler/icons-react";
 import { ButtonCard } from "../components/buttons/ButtonCard";
 import Footer from "../components/layout/Footer";
 
@@ -45,9 +45,6 @@ export default function HomePage() {
             <Text>
               {t("hero.text.1")}
             </Text>
-            <Text>
-              {t("hero.text.2")}
-            </Text>
 
             {/* Socials buttons */}
             <Group spacing={5}>
@@ -58,6 +55,15 @@ export default function HomePage() {
                 href="https://www.threads.net/@zaccomode"
               >
                 <IconBrandThreads />
+              </ButtonIcon>
+
+              <ButtonIcon
+                color="black"
+                radius={ComponentSize.MD}
+                component="a"
+                href="https://bsky.app/profile/isaacshea.com"
+              >
+                <IconBrandBluesky />
               </ButtonIcon>
 
               <ButtonIcon

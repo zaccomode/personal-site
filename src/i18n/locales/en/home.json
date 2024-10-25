@@ -2,8 +2,7 @@
   "hero": { 
     "title": "Hello there!",
     "text": {
-      "1": "I'm a software developer and interaction designer based in Brisbane, Australia. My passion is building products that are both beautiful and functional.",
-      "2": "I'm studying a Bachelor Information Technology and Bachelor of Interaction Design at QUT, and will finish late 2024. When not studying, I have been working on Threaditor, a post editor for Threads, Bluesky and Mastodon."
+      "1": "I'm a software developer and interaction designer based in Brisbane, Australia. My passion is building products that are both beautiful and functional."
     },
     "images": { 
       "portrait": "An image of Isaac leaning forward in front of a white background.",
