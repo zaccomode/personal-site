@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "title": "I'm Isaac Shea.",
+    "subtitle": "I'm a software developer and interaction designer based in Brisbane, Australia. I write software for the internet with a focus on user experience and functional design.",
+    "avatarAlt": "A headshot of Isaac Shea on a beach."
+  },
+  "projects": {
+    "threaditor": {
+      "imageAlt": "An image of the Threaditor app on a mobile phone and a laptop.",
+      "name": "Threaditor by Isaac Shea",
+      "description": "Threaditor gives you the tools to craft impactful posts for Threads, Bluesky and Mastodon."
+    },
+    "valence": {
+      "imageAlt": "The logo for Valence by Isaac Shea",
+      "name": "Valence by Isaac Shea",
+      "description": "A custom design system designed to make cross-platform development seamless."
+    },
+    "filedrop": {
+      "imageAlt": "An image of the Filedrop app on two mobile phones",
+      "name": "Filedrop by Isaac Shea",
+      "description": "A simple app to make sharing between web, iOS and Android simpler and faster."
+    },
+    "realmix": {
+      "imageAlt": "An image of the Realmix app on two mobile phones",
+      "name": "Realmix by Isaac Shea",
+      "description": "Shape the sound of your parties by building collaborative playlists in real-time."
+    }
+  },
+  "footer": { 
+    "copyright": "Copyright 2024 Isaac Shea",
+    "joke": "This site was made using 100% ethically-sourced code."
+  }
+}

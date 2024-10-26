@@ -1,150 +1,138 @@
-import portrait from "../assets/images/portrait.png";
-import filedrop from "../assets/images/filedrop.png";
-import realmix from "../assets/images/realmix.png";
-import realmixBg from "../assets/images/realmix-bg.png";
-import valence from "../assets/images/valence.png";
-import valenceBg from "../assets/images/valence-bg.png";
-import threaditor from "../assets/images/threaditor.png";
-import threaditorBg from "../assets/images/threaditor-bg.png";
-
+import { Flex, FlexCenter, Grid, IconButton, Image, Space, StyledFlex, Text, Title } from "@valence-ui/core";
 import { useTranslation } from "react-i18next";
-import Navbar from "../components/layout/Navbar";
-import { Column, SectionPage } from "phosphorus-web";
-import { ButtonIcon, ComponentSize, FlexAlign, FlexDirection, FlexJustify, Text } from "phosphorus-core";
-import { Title } from "../components/text/Title";
-import { Group, Image, Space } from "@mantine/core";
-import { IconBrandInstagram, IconBrandGithub, IconMail, IconBrandThreads, IconBrandBluesky } from "@tabler/icons-react";
-import { ButtonCard } from "../components/buttons/ButtonCard";
-import Footer from "../components/layout/Footer";
+import { IconBrandBluesky, IconBrandGithub, IconBrandInstagram, IconBrandThreads, IconMail } from "@tabler/icons-react";
+
+import avatarImage from "../assets/images/avatar.png";
+import threaditorImage from "../assets/images/products/threaditor.png";
+import valenceImage from "../assets/images/products/valence.png";
+import filedropImage from "../assets/images/products/filedrop.png";
+import realmixImage from "../assets/images/products/realmix.png";
+import ProductCard from "../components/ProductCard";
 
 export default function HomePage() {
-
-  // Hooks
   const { t } = useTranslation("home");
 
   return (
     <>
-      <Navbar page="home" />
-
-      <Space h={40} />
-
-      <SectionPage
-        style={{ justifyContent: "center", minHeight: "100vh" }}
+      <FlexCenter
+        innerProps={{
+          align: "center",
+          width: "100%",
+          style: { maxWidth: 500 }
+        }}
+        style={{
+          minHeight: "100vh",
+          padding: "40px 15px 15px 15px"
+        }}
       >
-        <Column.Container
-          height={{ default: "fit-content" }}
-          direction={{ default: FlexDirection.Row, mobile: FlexDirection.ColumnReverse }}
+        <Image
+          src={avatarImage}
+          alt={t("hero.imageAlt")}
+          style={{ background: "none" }}
+          width={200}
+        />
+
+        <Title align="center">
+          {t("hero.title")}
+        </Title>
+        <Text align="center" size="md">
+          {t("hero.subtitle")}
+        </Text>
+
+        {/* Socials buttons */}
+        <Flex gap={5}>
+          <IconButton
+            variant="paper"
+            tooltip="@zaccomode"
+            component="a" href="https://threads.net/@zaccomode" target="_blank"
+          >
+            <IconBrandThreads />
+          </IconButton>
+
+          <IconButton
+            variant="paper" color="blue"
+            tooltip="@isaacshea.com"
+            component="a" href="https://bsky.app/profile/isaacshea.com" target="_blank"
+          >
+            <IconBrandBluesky />
+          </IconButton>
+
+          <IconButton
+            variant="paper" color="violet"
+            tooltip="@zaccomode"
+            component="a" href="https://github.com/zaccomode" target="_blank"
+          >
+            <IconBrandGithub />
+          </IconButton>
+
+          <IconButton
+            variant="paper" color="pink"
+            tooltip="@zaccomode"
+            component="a" href="https://www.instagram.com/zaccomode/" target="_blank"
+          >
+            <IconBrandInstagram />
+          </IconButton>
+
+          <IconButton
+            variant="paper" color="orange"
+            tooltip="isaac_shea@icloud.com"
+            component="a" href="mailto:isaac_shea@icloud.com" target="_blank"
+          >
+            <IconMail />
+          </IconButton>
+        </Flex>
+
+        <Space height={20} />
+
+        {/* Products */}
+        <Grid columns={2} width="100%" gap={5}>
+          <ProductCard
+            image={threaditorImage}
+            imageAlt={t("projects.threaditor.imageAlt")}
+            title={t("projects.threaditor.name")}
+            description={t("projects.threaditor.description")}
+            component="a" href="https://threaditor.net" target="_blank"
+          />
+
+          <ProductCard
+            image={valenceImage}
+            imageAlt={t("projects.valence.imageAlt")}
+            title={t("projects.valence.name")}
+            description={t("projects.valence.description")}
+            component="a" href="https://valence.isaacshea.com" target="_blank"
+          />
+
+          <ProductCard
+            image={filedropImage}
+            imageAlt={t("projects.filedrop.imageAlt")}
+            title={t("projects.filedrop.name")}
+            description={t("projects.filedrop.description")}
+            component="a" href="https://filedrop.isaacshea.com" target="_blank"
+          />
+
+          <ProductCard
+            image={realmixImage}
+            imageAlt={t("projects.realmix.imageAlt")}
+            title={t("projects.realmix.name")}
+            description={t("projects.realmix.description")}
+            component="a" href="https://realmix.isaacshea.com" target="_blank"
+          />
+        </Grid>
+
+        <Space height={20} />
+
+        <StyledFlex
+          width="100%" gap={10}
+          direction="column" align="center"
         >
-          <Column
-            width={{ default: "70%", mobile: "100%" }}
-          >
-            {/* Text */}
-            <Title>
-              {t("hero.title")}
-            </Title>
-            <Text>
-              {t("hero.text.1")}
-            </Text>
-
-            {/* Socials buttons */}
-            <Group spacing={5}>
-              <ButtonIcon
-                color="black"
-                radius={ComponentSize.MD}
-                component="a"
-                href="https://www.threads.net/@zaccomode"
-              >
-                <IconBrandThreads />
-              </ButtonIcon>
-
-              <ButtonIcon
-                color="black"
-                radius={ComponentSize.MD}
-                component="a"
-                href="https://bsky.app/profile/isaacshea.com"
-              >
-                <IconBrandBluesky />
-              </ButtonIcon>
-
-              <ButtonIcon
-                color="black"
-                radius={ComponentSize.MD}
-                component="a"
-                href="https://www.instagram.com/zaccomode/"
-              >
-                <IconBrandInstagram />
-              </ButtonIcon>
-              <ButtonIcon
-                color="black"
-                radius={ComponentSize.MD}
-                component="a"
-                href="https://github.com/zaccomode"
-              >
-                <IconBrandGithub />
-              </ButtonIcon>
-              <ButtonIcon
-                color="black"
-                radius={ComponentSize.MD}
-                component="a"
-                href="mailto:isaac_shea@icloud.com"
-              >
-                <IconMail />
-              </ButtonIcon>
-            </Group>
-          </Column>
-
-          <Column
-            width={{ default: "30%", mobile: "100%" }}
-            align={{ default: FlexAlign.Center }}
-            justify={{ default: FlexJustify.Center }}
-          >
-            <Image
-              src={portrait}
-              alt={t("hero.images.portrait")}
-              radius="md"
-              maw={200}
-            />
-          </Column>
-        </Column.Container>
-
-        {/* Project buttons */}
-        <Group>
-          <ButtonCard
-            image={threaditor}
-            alt={t("hero.images.threaditor")}
-            background={threaditorBg}
-
-            component="a"
-            href="https://threaditor.net/"
-          />
-          <ButtonCard
-            image={valence}
-            alt={t("hero.images.valence")}
-            background={valenceBg}
-
-            component="a"
-            href="https://valence.isaacshea.com/"
-          />
-          <ButtonCard
-            image={realmix}
-            alt={t("hero.images.realmix")}
-            background={realmixBg}
-
-            component="a"
-            href="https://realmix.isaacshea.com/"
-          />
-          <ButtonCard
-            image={filedrop}
-            alt={t("hero.images.filedrop")}
-            backgroundColor="#28B2CB"
-
-            component="a"
-            href="https://filedrop.isaacshea.com/"
-          />
-        </Group>
-      </SectionPage>
-
-      <Footer />
+          <Text align="center">
+            {t("footer.copyright")}
+          </Text>
+          <Text size="xs" align="center">
+            {t("footer.joke")}
+          </Text>
+        </StyledFlex>
+      </FlexCenter>
     </>
   )
 }
