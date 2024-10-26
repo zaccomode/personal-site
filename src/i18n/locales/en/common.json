@@ -1,13 +1,1 @@
-{ 
-  "name": "Isaac Shea",
-  "nav": { 
-    "buttons": {
-      "home": "Home",
-      "studies": "Case Studies",
-      "portfolio": "Portfolio"
-    }
-  },
-  "footer": { 
-    "text": "© 2024 Isaac Shea | Looking for me? I'm always @zaccomode."
-  }
-}
+{}
