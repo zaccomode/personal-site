@@ -1,4 +1,4 @@
-import { Flex, FlexCenter, Grid, IconButton, Image, Space, Text, Title } from "@valence-ui/core";
+import { Flex, FlexCenter, Grid, IconButton, Image, Space, StyledFlex, Text, Title } from "@valence-ui/core";
 import { useTranslation } from "react-i18next";
 import { IconBrandBluesky, IconBrandGithub, IconBrandInstagram, IconBrandThreads, IconMail } from "@tabler/icons-react";
 
@@ -22,7 +22,7 @@ export default function HomePage() {
         }}
         style={{
           minHeight: "100vh",
-          padding: "40px 15px"
+          padding: "40px 15px 15px 15px"
         }}
       >
         <Image
@@ -82,7 +82,7 @@ export default function HomePage() {
           </IconButton>
         </Flex>
 
-        <Space height={10} />
+        <Space height={20} />
 
         {/* Products */}
         <Grid columns={2} width="100%" gap={5}>
@@ -91,6 +91,7 @@ export default function HomePage() {
             imageAlt={t("projects.threaditor.imageAlt")}
             title={t("projects.threaditor.name")}
             description={t("projects.threaditor.description")}
+            component="a" href="https://threaditor.net" target="_blank"
           />
 
           <ProductCard
@@ -98,6 +99,7 @@ export default function HomePage() {
             imageAlt={t("projects.valence.imageAlt")}
             title={t("projects.valence.name")}
             description={t("projects.valence.description")}
+            component="a" href="https://valence.isaacshea.com" target="_blank"
           />
 
           <ProductCard
@@ -105,6 +107,7 @@ export default function HomePage() {
             imageAlt={t("projects.filedrop.imageAlt")}
             title={t("projects.filedrop.name")}
             description={t("projects.filedrop.description")}
+            component="a" href="https://filedrop.isaacshea.com" target="_blank"
           />
 
           <ProductCard
@@ -112,8 +115,23 @@ export default function HomePage() {
             imageAlt={t("projects.realmix.imageAlt")}
             title={t("projects.realmix.name")}
             description={t("projects.realmix.description")}
+            component="a" href="https://realmix.isaacshea.com" target="_blank"
           />
         </Grid>
+
+        <Space height={20} />
+
+        <StyledFlex
+          width="100%" gap={10}
+          direction="column" align="center"
+        >
+          <Text align="center">
+            {t("footer.copyright")}
+          </Text>
+          <Text size="xs" align="center">
+            {t("footer.joke")}
+          </Text>
+        </StyledFlex>
       </FlexCenter>
     </>
   )
