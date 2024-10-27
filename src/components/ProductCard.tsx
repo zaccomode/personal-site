@@ -1,4 +1,4 @@
-import { UnstyledButton, GenericButtonProps, Image, Text, StyledFlex, useColors, Flex, Title, useValence } from "@valence-ui/core";
+import { UnstyledButton, GenericButtonProps, Image, Text, StyledFlex, useColors, Flex, Title, useValence, useBreakpoint } from "@valence-ui/core";
 import { useState } from "react";
 
 type Props = Omit<GenericButtonProps, "children"> & {
@@ -20,6 +20,9 @@ export default function ProductCard(props: Props) {
   const { getHex } = useColors();
   const theme = useValence();
   const [hovered, setHovered] = useState(false);
+  const { isMobile } = useBreakpoint();
+
+  const doHover = hovered && !isMobile;
 
   return (
     <UnstyledButton
@@ -29,7 +32,7 @@ export default function ProductCard(props: Props) {
 
       style={{
         position: "relative",
-        boxShadow: hovered ? theme.defaults.shadow : null,
+        boxShadow: doHover ? theme.defaults.shadow : null,
         ...style
       }}
       {...rest}
@@ -46,7 +49,7 @@ export default function ProductCard(props: Props) {
           left: -1, right: -1, bottom: -1, top: -1,
           backgroundColor: `${getHex("permaBlack")}AA`,
           backdropFilter: "blur(10px)",
-          opacity: hovered ? 1 : 0,
+          opacity: doHover ? 1 : 0,
           transition: "opacity 0.1s ease-in-out",
         }}
       >
@@ -54,15 +57,15 @@ export default function ProductCard(props: Props) {
           width="100%" height="100%" gap={10} padding={10}
           direction="column" align="center" justify="center"
           style={{
-            transform: hovered ? "scale(1)" : "scale(0.95)",
+            transform: doHover ? "scale(1)" : "scale(0.95)",
             transition: "transform 0.1s ease-in-out",
           }}
         >
-          <Title order={5} align="center">
+          <Title order={5} align="center" color="permaWhite">
             {title}
           </Title>
 
-          <Text align="center">
+          <Text align="center" color="permaWhite">
             {description}
           </Text>
         </Flex>
