@@ -42,14 +42,6 @@ export default function HomePage() {
         {/* Socials buttons */}
         <Flex gap={5}>
           <IconButton
-            variant="paper"
-            tooltip="@zaccomode"
-            component="a" href="https://threads.net/@zaccomode" target="_blank"
-          >
-            <IconBrandThreads />
-          </IconButton>
-
-          <IconButton
             variant="paper" color="blue"
             tooltip="@isaacshea.com"
             component="a" href="https://bsky.app/profile/isaacshea.com" target="_blank"
@@ -66,6 +58,14 @@ export default function HomePage() {
           </IconButton>
 
           <IconButton
+            variant="paper"
+            tooltip="@zaccomode"
+            component="a" href="https://threads.net/@zaccomode" target="_blank"
+          >
+            <IconBrandThreads />
+          </IconButton>
+
+          <IconButton
             variant="paper" color="pink"
             tooltip="@zaccomode"
             component="a" href="https://www.instagram.com/zaccomode/" target="_blank"
@@ -75,8 +75,8 @@ export default function HomePage() {
 
           <IconButton
             variant="paper" color="orange"
-            tooltip="isaac_shea@icloud.com"
-            component="a" href="mailto:isaac_shea@icloud.com" target="_blank"
+            tooltip="isaac@isaacshea.com"
+            component="a" href="mailto:isaac@isaacshea.com" target="_blank"
           >
             <IconMail />
           </IconButton>
@@ -126,7 +126,7 @@ export default function HomePage() {
           direction="column" align="center"
         >
           <Text align="center">
-            {t("footer.copyright")}
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </Text>
           <Text size="xs" align="center">
             {t("footer.joke")}

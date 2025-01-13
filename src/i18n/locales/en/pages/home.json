@@ -26,8 +26,8 @@
       "description": "Shape the sound of your parties by building collaborative playlists in real-time."
     }
   },
-  "footer": { 
-    "copyright": "Copyright 2024 Isaac Shea",
+  "footer": {
+    "copyright": "Copyright {{year}} Isaac Shea",
     "joke": "This site was made using 100% ethically-sourced code."
   }
 }
