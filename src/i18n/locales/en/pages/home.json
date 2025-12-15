@@ -6,22 +6,22 @@
   },
   "projects": {
     "threaditor": {
-      "imageAlt": "An image of the Threaditor app on a mobile phone and a laptop.",
+      "imageAlt": "Threaditor logo",
       "name": "Threaditor by Isaac Shea",
       "description": "Threaditor gives you the tools to craft impactful posts for Threads, Bluesky and Mastodon."
     },
     "valence": {
-      "imageAlt": "The logo for Valence by Isaac Shea",
+      "imageAlt": "Valence design system logo",
       "name": "Valence by Isaac Shea",
       "description": "A custom design system designed to make cross-platform development seamless."
     },
     "filedrop": {
-      "imageAlt": "An image of the Filedrop app on two mobile phones",
+      "imageAlt": "Filedrop app logo",
       "name": "Filedrop by Isaac Shea",
       "description": "A simple app to make sharing between web, iOS and Android simpler and faster."
     },
     "realmix": {
-      "imageAlt": "An image of the Realmix app on two mobile phones",
+      "imageAlt": "Realmix app logo",
       "name": "Realmix by Isaac Shea",
       "description": "Shape the sound of your parties by building collaborative playlists in real-time."
     }
