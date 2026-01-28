@@ -1,3 +1,10 @@
+import avatarImage from "../assets/images/avatar.png";
+import threaditorImage from "../assets/images/products/threaditor.png";
+import valenceImage from "../assets/images/products/valence.png";
+import filedropImage from "../assets/images/products/filedrop.png";
+import realmixImage from "../assets/images/products/realmix.png";
+import wolframImage from "../assets/images/products/wolfram.png";
+
 import {
   Flex,
   FlexCenter,
@@ -17,12 +24,6 @@ import {
   IconBrandThreads,
   IconMail,
 } from "@tabler/icons-react";
-
-import avatarImage from "../assets/images/avatar.png";
-import threaditorImage from "../assets/images/products/threaditor.png";
-import valenceImage from "../assets/images/products/valence.png";
-import filedropImage from "../assets/images/products/filedrop.png";
-import realmixImage from "../assets/images/products/realmix.png";
 import ProductCard from "../components/ProductCard";
 
 export default function HomePage() {
@@ -115,22 +116,19 @@ export default function HomePage() {
         {/* Products */}
         <Grid columns={2} width="100%" gap={5}>
           <ProductCard
+            image={wolframImage}
+            imageAlt={t("projects.wolfram.imageAlt")}
+            title={t("projects.wolfram.name")}
+            description={t("projects.wolfram.description")}
+          />
+
+          <ProductCard
             image={threaditorImage}
             imageAlt={t("projects.threaditor.imageAlt")}
             title={t("projects.threaditor.name")}
             description={t("projects.threaditor.description")}
             component="a"
             href="https://threaditor.net"
-            target="_blank"
-          />
-
-          <ProductCard
-            image={valenceImage}
-            imageAlt={t("projects.valence.imageAlt")}
-            title={t("projects.valence.name")}
-            description={t("projects.valence.description")}
-            component="a"
-            href="https://valence.isaacshea.com"
             target="_blank"
           />
 
@@ -145,13 +143,20 @@ export default function HomePage() {
           />
 
           <ProductCard
+            image={valenceImage}
+            imageAlt={t("projects.valence.imageAlt")}
+            title={t("projects.valence.name")}
+            description={t("projects.valence.description")}
+            component="a"
+            href="https://valence.isaacshea.com"
+            target="_blank"
+          />
+
+          <ProductCard
             image={realmixImage}
             imageAlt={t("projects.realmix.imageAlt")}
             title={t("projects.realmix.name")}
             description={t("projects.realmix.description")}
-            component="a"
-            href="https://realmix.isaacshea.com"
-            target="_blank"
           />
         </Grid>
 

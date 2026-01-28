@@ -1,33 +1,38 @@
 {
   "hero": {
     "title": "I'm Isaac Shea.",
-    "subtitle": "I'm a software developer and interaction designer based in Brisbane, Australia. I write software for the internet with a focus on user experience and functional design.",
+    "subtitle": "I'm a software developer and interaction designer based in Brisbane, Australia. I write sotware with a strong focus on user experience and functional design.",
     "avatarAlt": "A headshot of Isaac Shea on a beach."
   },
   "projects": {
+    "wolfram": {
+      "imageAlt": "Wolfram logo",
+      "name": "Wolfram (Coming Soon)",
+      "description": "A brilliantly simple workout tracker for iOS."
+    },
     "threaditor": {
       "imageAlt": "Threaditor logo",
-      "name": "Threaditor by Isaac Shea",
-      "description": "Threaditor gives you the tools to craft impactful posts for Threads, Bluesky and Mastodon."
+      "name": "Threaditor",
+      "description": "Draft and publish content to Threads, Bluesky and Mastodon from a single app."
     },
     "valence": {
       "imageAlt": "Valence design system logo",
-      "name": "Valence by Isaac Shea",
-      "description": "A custom design system designed to make cross-platform development seamless."
+      "name": "Valence",
+      "description": "My personal design framework, used to make cross-platform apps like Threaditor and Filedrop."
     },
     "filedrop": {
       "imageAlt": "Filedrop app logo",
-      "name": "Filedrop by Isaac Shea",
-      "description": "A simple app to make sharing between web, iOS and Android simpler and faster."
+      "name": "Filedrop",
+      "description": "A simple app to make sharing between web, iOS and Android quicker and easier."
     },
     "realmix": {
       "imageAlt": "Realmix app logo",
-      "name": "Realmix by Isaac Shea",
-      "description": "Shape the sound of your parties by building collaborative playlists in real-time."
+      "name": "Realmix (retired)",
+      "description": "An app to build collaborative Spotify playlists with friends in real-time."
     }
   },
   "footer": {
     "copyright": "Copyright {{year}} Isaac Shea",
-    "joke": "This site was made using 100% ethically-sourced code."
+    "joke": "All projects were made using 100% ethically-sourced ideas."
   }
 }
