@@ -120,6 +120,9 @@ export default function HomePage() {
             imageAlt={t("projects.wolfram.imageAlt")}
             title={t("projects.wolfram.name")}
             description={t("projects.wolfram.description")}
+            component="a"
+            href="https://wolfram.isaacshea.com"
+            target="_blank"
           />
 
           <ProductCard

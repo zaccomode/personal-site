@@ -7,7 +7,7 @@
   "projects": {
     "wolfram": {
       "imageAlt": "Wolfram logo",
-      "name": "Wolfram (Coming Soon)",
+      "name": "Wolfram",
       "description": "A brilliantly simple workout tracker for iOS."
     },
     "threaditor": {
