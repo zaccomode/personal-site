@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "I'm Isaac Shea.",
-    "subtitle": "I'm a software developer and interaction designer based in Brisbane, Australia. I write sotware with a strong focus on user experience and functional design.",
+    "subtitle": "I'm an interaction designer and software developer based in Brisbane, Australia. I write software with a strong focus on user experience and functional design.",
     "avatarAlt": "A headshot of Isaac Shea on a beach."
   },
   "projects": {
@@ -29,6 +29,14 @@
       "imageAlt": "Realmix app logo",
       "name": "Realmix (retired)",
       "description": "An app to build collaborative Spotify playlists with friends in real-time."
+    }
+  },
+  "writing": {
+    "title": "Writing",
+    "description": "I do deeper dives into design and development of some projects over on Medium.",
+    "formkit": {
+      "title": "FormKit: On Designing Forms for a Living",
+      "description": "About eighteen months ago, I was tasked with rebuilding and uplifting all the forms across Insurebot — a system that became known internally as FormKit. What many would consider a rather mundane task turned out to be an excellent opportunity to deep-dive on how to design delightful and powerful forms for power users and novices alike."
     }
   },
   "footer": {

@@ -1,4 +1,15 @@
-import { UnstyledButton, GenericButtonProps, Image, Text, StyledFlex, useColors, Flex, Title, useValence, useBreakpoint } from "@valence-ui/core";
+import {
+  UnstyledButton,
+  GenericButtonProps,
+  Image,
+  Text,
+  StyledFlex,
+  useColors,
+  Flex,
+  Title,
+  useValence,
+  useBreakpoint,
+} from "@valence-ui/core";
 import { useState } from "react";
 
 type Props = Omit<GenericButtonProps, "children"> & {
@@ -7,15 +18,10 @@ type Props = Omit<GenericButtonProps, "children"> & {
 
   title: string;
   description: string;
-}
+};
 
 export default function ProductCard(props: Props) {
-  const {
-    image, imageAlt,
-    title, description,
-    style,
-    ...rest
-  } = props;
+  const { image, imageAlt, title, description, style, ...rest } = props;
 
   const { getHex } = useColors();
   const theme = useValence();
@@ -29,24 +35,23 @@ export default function ProductCard(props: Props) {
       motion={{ onHover: "raise", onTap: "bounce" }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-
       style={{
         position: "relative",
         boxShadow: doHover ? theme.defaults.shadow : null,
-        ...style
+        transition: "box-shadow 0.1s ease-in-out",
+        ...style,
       }}
       {...rest}
     >
-      <Image
-        src={image}
-        alt={imageAlt}
-        style={{ aspectRatio: "3.6/2" }}
-      />
+      <Image src={image} alt={imageAlt} style={{ aspectRatio: "3.6/2" }} />
 
       <StyledFlex
         style={{
           position: "absolute",
-          left: -1, right: -1, bottom: -1, top: -1,
+          left: -1,
+          right: -1,
+          bottom: -1,
+          top: -1,
           backgroundColor: `${getHex("permaBlack")}AA`,
           backdropFilter: "blur(10px)",
           opacity: doHover ? 1 : 0,
@@ -54,8 +59,13 @@ export default function ProductCard(props: Props) {
         }}
       >
         <Flex
-          width="100%" height="100%" gap={10} padding={10}
-          direction="column" align="center" justify="center"
+          width="100%"
+          height="100%"
+          gap={10}
+          padding={10}
+          direction="column"
+          align="center"
+          justify="center"
           style={{
             transform: doHover ? "scale(1)" : "scale(0.95)",
             transition: "transform 0.1s ease-in-out",
@@ -71,5 +81,5 @@ export default function ProductCard(props: Props) {
         </Flex>
       </StyledFlex>
     </UnstyledButton>
-  )
+  );
 }

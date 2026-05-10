@@ -21,10 +21,12 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandMedium,
   IconBrandThreads,
   IconMail,
 } from "@tabler/icons-react";
 import ProductCard from "../components/ProductCard";
+import ArticleCard from "../components/ArticleCard";
 
 export default function HomePage() {
   const { t } = useTranslation("home");
@@ -60,10 +62,10 @@ export default function HomePage() {
             variant="paper"
             tooltip="@zaccomode"
             component="a"
-            href="https://threads.net/@zaccomode"
+            href="https://zaccomode.medium.com"
             target="_blank"
           >
-            <IconBrandThreads />
+            <IconBrandMedium />
           </IconButton>
 
           <IconButton
@@ -97,6 +99,16 @@ export default function HomePage() {
             target="_blank"
           >
             <IconBrandInstagram />
+          </IconButton>
+
+          <IconButton
+            variant="paper"
+            tooltip="@zaccomode"
+            component="a"
+            href="https://threads.net/@zaccomode"
+            target="_blank"
+          >
+            <IconBrandThreads />
           </IconButton>
 
           <IconButton
@@ -160,6 +172,24 @@ export default function HomePage() {
             imageAlt={t("projects.realmix.imageAlt")}
             title={t("projects.realmix.name")}
             description={t("projects.realmix.description")}
+          />
+        </Grid>
+
+        <Space height={20} />
+
+        {/* Writing */}
+        <Title align="center" order={2}>
+          {t("writing.title")}
+        </Title>
+        <Text align="center">{t("writing.description")}</Text>
+
+        <Grid columns={2} width="100%" gap={5}>
+          <ArticleCard
+            title={t("writing.formkit.title")}
+            description={t("writing.formkit.description")}
+            component="a"
+            href="https://zaccomode.medium.com/formkit-on-designing-forms-for-a-living-6b16bc2191ad"
+            target="_blank"
           />
         </Grid>
 
