@@ -5,6 +5,11 @@
     "avatarAlt": "A headshot of Isaac Shea on a beach."
   },
   "projects": {
+    "betterfuel": {
+      "imageAlt": "BetterFuel logo",
+      "name": "BetterFuel",
+      "description": "The fuel app you deserve—reliable prices, easy tracking, and no ads."
+    },
     "wolfram": {
       "imageAlt": "Wolfram logo",
       "name": "Wolfram",

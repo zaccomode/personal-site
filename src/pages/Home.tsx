@@ -4,6 +4,7 @@ import valenceImage from "../assets/images/products/valence.png";
 import filedropImage from "../assets/images/products/filedrop.png";
 import realmixImage from "../assets/images/products/realmix.png";
 import wolframImage from "../assets/images/products/wolfram.png";
+import betterfuelImage from "../assets/images/products/betterfuel.png";
 
 import {
   Flex,
@@ -127,6 +128,16 @@ export default function HomePage() {
 
         {/* Products */}
         <Grid columns={2} width="100%" gap={5}>
+          <ProductCard
+            image={betterfuelImage}
+            imageAlt={t("projects.betterfuel.imageAlt")}
+            title={t("projects.betterfuel.name")}
+            description={t("projects.betterfuel.description")}
+            component="a"
+            href="https://betterfuel.isaacshea.com"
+            target="_blank"
+          />
+
           <ProductCard
             image={wolframImage}
             imageAlt={t("projects.wolfram.imageAlt")}
