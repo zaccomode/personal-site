@@ -28,6 +28,7 @@ import {
 } from "@tabler/icons-react";
 import ProductCard from "../components/ProductCard";
 import ArticleCard from "../components/ArticleCard";
+import DevtoolCard from "../components/DevtoolCard";
 
 export default function HomePage() {
   const { t } = useTranslation("home");
@@ -53,22 +54,10 @@ export default function HomePage() {
         />
 
         <Title align="center">{t("hero.title")}</Title>
-        <Text align="center" size="md">
-          {t("hero.subtitle")}
-        </Text>
+        <Text align="center">{t("hero.subtitle")}</Text>
 
         {/* Socials buttons */}
         <Flex gap={5}>
-          <IconButton
-            variant="paper"
-            tooltip="@zaccomode"
-            component="a"
-            href="https://zaccomode.medium.com"
-            target="_blank"
-          >
-            <IconBrandMedium />
-          </IconButton>
-
           <IconButton
             variant="paper"
             color="violet"
@@ -78,6 +67,16 @@ export default function HomePage() {
             target="_blank"
           >
             <IconBrandGithub />
+          </IconButton>
+
+          <IconButton
+            variant="paper"
+            tooltip="@zaccomode"
+            component="a"
+            href="https://zaccomode.medium.com"
+            target="_blank"
+          >
+            <IconBrandMedium />
           </IconButton>
 
           <IconButton
@@ -200,6 +199,48 @@ export default function HomePage() {
             description={t("writing.formkit.description")}
             component="a"
             href="https://zaccomode.medium.com/formkit-on-designing-forms-for-a-living-6b16bc2191ad"
+            target="_blank"
+          />
+        </Grid>
+
+        <Space height={20} />
+
+        {/* Devtools */}
+        <Title order={2} family="DM Mono" align="center">
+          {t("devtools.title")}
+        </Title>
+        <Text align="center">{t("devtools.introduction")}</Text>
+
+        <Grid columns={2} width="100%" gap={5}>
+          <DevtoolCard
+            title={t("devtools.arborist.title")}
+            description={t("devtools.arborist.description")}
+            component="a"
+            href="https://github.com/zaccomode/Arborist"
+            target="_blank"
+          />
+
+          <DevtoolCard
+            title={t("devtools.beautifulShadowsSketch.title")}
+            description={t("devtools.beautifulShadowsSketch.description")}
+            component="a"
+            href="https://github.com/zaccomode/beautiful-shadows-sketch"
+            target="_blank"
+          />
+
+          <DevtoolCard
+            title={t("devtools.gitHubIssuesMCP.title")}
+            description={t("devtools.gitHubIssuesMCP.description")}
+            component="a"
+            href="https://github.com/zaccomode/github-issues-mcp"
+            target="_blank"
+          />
+
+          <DevtoolCard
+            title={t("devtools.upBankMCP.title")}
+            description={t("devtools.upBankMCP.description")}
+            component="a"
+            href="https://github.com/zaccomode/up-bank-mcp"
             target="_blank"
           />
         </Grid>

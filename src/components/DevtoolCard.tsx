@@ -13,7 +13,7 @@ type Props = Omit<GenericButtonProps, "children"> & {
   description: string;
 };
 
-export default function ArticleCard(props: Props) {
+export default function DevtoolCard(props: Props) {
   const { title, description, style, ...rest } = props;
 
   const theme = useValence();
@@ -43,7 +43,9 @@ export default function ArticleCard(props: Props) {
       }}
       {...rest}
     >
-      <Title order={3}>{title}</Title>
+      <Title order={3} family="DM Mono">
+        {title}
+      </Title>
       <Text
         style={{
           overflow: "hidden",

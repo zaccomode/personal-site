@@ -44,6 +44,26 @@
       "description": "About eighteen months ago, I was tasked with rebuilding and uplifting all the forms across Insurebot — a system that became known internally as FormKit. What many would consider a rather mundane task turned out to be an excellent opportunity to deep-dive on how to design delightful and powerful forms for power users and novices alike."
     }
   },
+  "devtools": {
+    "title": "<Devtools/>",
+    "introduction": "These are smaller tools I have built up to help with development and life administration.",
+    "arborist": {
+      "title": "Arborist",
+      "description": "A Git worktree management app for macOS, written in SwiftUI."
+    },
+    "beautifulShadowsSketch": {
+      "title": "Beautiful Shadows Sketch Port",
+      "description": "Alex Widua's Beautiful Shadows plugin for Figma, ported to Sketch."
+    },
+    "gitHubIssuesMCP": {
+      "title": "GitHub Issues MCP",
+      "description": "A simple MCP server that allows AI agents to interact with your GitHub Issues, on your behalf or their own."
+    },
+    "upBankMCP": {
+      "title": "Up Bank MCP",
+      "description": "A MCP server that allows AI agents to read and analyse your transactions for the Australian bank Up."
+    }
+  },
   "footer": {
     "copyright": "Copyright {{year}} Isaac Shea",
     "joke": "All projects were made using 100% ethically-sourced ideas."

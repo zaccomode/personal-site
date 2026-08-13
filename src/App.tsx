@@ -9,7 +9,7 @@ export default function App() {
         mobileWidth: 650,
         tabletWidth: 850,
         desktopLargeWidth: 1100,
-        tvWidth: 1440
+        tvWidth: 1440,
       }}
       defaults={{
         size: "sm",

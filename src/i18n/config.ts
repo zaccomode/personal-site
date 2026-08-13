@@ -8,16 +8,13 @@ import enHome from "./locales/en/pages/home.json";
 i18n.use(initReactI18next).init({
   fallbackLng: "en",
   lng: "en",
-  resources: { 
-    en: { 
+  resources: {
+    en: {
       common: enCommon,
-      home: enHome
-    }
+      home: enHome,
+    },
   },
-  ns: [
-    "common",
-    "landing",
-  ],
+  ns: ["common", "landing"],
   defaultNS: "common",
 });
 
