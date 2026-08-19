@@ -39,6 +39,10 @@
   "writing": {
     "title": "Writing",
     "description": "I do deeper dives into design and development of some projects over on Medium.",
+    "agenticAi": {
+      "title": "Agentic AI in 2026: The 3D Printer of Software",
+      "description": "Fourteen months ago I was quite the AI sceptic, and by the middle of last year agentic AI had become embedded in how I work. Since then the magic has been wearing off. I still pay for Claude, but I justify it the way I justify my 3D printer: brilliant for little gizmos and quick prototypes, not for production parts."
+    },
     "formkit": {
       "title": "FormKit: On Designing Forms for a Living",
       "description": "About eighteen months ago, I was tasked with rebuilding and uplifting all the forms across Insurebot — a system that became known internally as FormKit. What many would consider a rather mundane task turned out to be an excellent opportunity to deep-dive on how to design delightful and powerful forms for power users and novices alike."
