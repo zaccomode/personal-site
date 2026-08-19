@@ -195,6 +195,14 @@ export default function HomePage() {
 
         <Grid columns={2} width="100%" gap={5}>
           <ArticleCard
+            title={t("writing.agenticAi.title")}
+            description={t("writing.agenticAi.description")}
+            component="a"
+            href="https://zaccomode.medium.com/agentic-ai-in-2026-the-3d-printer-of-software-efa4d97a812b"
+            target="_blank"
+          />
+
+          <ArticleCard
             title={t("writing.formkit.title")}
             description={t("writing.formkit.description")}
             component="a"
