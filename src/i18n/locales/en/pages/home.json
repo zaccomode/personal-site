@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "I'm Isaac Shea.",
-    "subtitle": "I'm an interaction designer and software developer based in Brisbane, Australia. I build things for the internet with a strong focus on user experience and functional design.",
+    "subtitle": "I'm an interaction designer and software developer based in Brisbane, Australia. I specialise in taking complex technical problems and looking at them through a user-first lens, with the goal of delivering polished, powerful and intuitive solutions.",
     "avatarAlt": "A headshot of Isaac Shea on a beach."
   },
   "projects": {
@@ -39,6 +39,10 @@
   "writing": {
     "title": "Writing",
     "description": "I do deeper dives into design and development of some projects over on Medium.",
+    "intelligentAutofill": {
+      "title": "Building an AI Feature For Normal People",
+      "description": "Everybody has been drinking the AI Kool-Aid recently. In truth, so have I. It has completely revolutionised the kind of work I do and how I do it. I’m enthusiastic about how it can similarly revolutionise the work of non-nerd people in regular jobs, but AI is a complicated technology that is very tricky to neatly package up for regular people to use."
+    },
     "agenticAi": {
       "title": "Agentic AI in 2026: The 3D Printer of Software",
       "description": "Fourteen months ago I was quite the AI sceptic, and by the middle of last year agentic AI had become embedded in how I work. Since then the magic has been wearing off. I still pay for Claude, but I justify it the way I justify my 3D printer: brilliant for little gizmos and quick prototypes, not for production parts."

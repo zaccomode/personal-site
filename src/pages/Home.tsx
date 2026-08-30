@@ -195,6 +195,14 @@ export default function HomePage() {
 
         <Grid columns={2} width="100%" gap={5}>
           <ArticleCard
+            title={t("writing.intelligentAutofill.title")}
+            description={t("writing.intelligentAutofill.description")}
+            component="a"
+            href="https://zaccomode.medium.com/building-an-ai-feature-for-normal-people-bad44c28a8b9"
+            target="_blank"
+          />
+
+          <ArticleCard
             title={t("writing.agenticAi.title")}
             description={t("writing.agenticAi.description")}
             component="a"
